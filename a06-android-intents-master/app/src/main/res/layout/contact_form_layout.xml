@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_lname"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:hint="@string/last_name_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_fname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:inputType="text"
+            android:maxLines="1"
+            android:nextFocusForward="@id/tiet_phone"
+            tools:text="asdf"
+            style="@style/AppTheme.ContactForm.EditText"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_fname"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/first_name_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            tools:text="asdf"
+            android:nextFocusForward="@id/tiet_lname"
+            android:background="@color/colorPrimary"
+            style="@style/AppTheme.ContactForm.EditText"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_phone"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:hint="@string/phone_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_lname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:inputType="text"
+            android:maxLines="1"
+            android:nextFocusForward="@id/tiet_email"
+            tools:text="asdf"
+            style="@style/AppTheme.ContactForm.EditText"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_email"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:hint="@string/email_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:inputType="text"
+            android:maxLines="1"
+            android:nextFocusForward="@id/tiet_address"
+            style="@style/AppTheme.ContactForm.EditText"
+            tools:text="asdf" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_address"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:hint="@string/address_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:inputType="text"
+            android:maxLines="1"
+            android:nextFocusForward="@id/tiet_website"
+            tools:text="asdf"
+            style="@style/AppTheme.ContactForm.EditText"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_website"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:hint="@string/website_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:inputType="text"
+            android:maxLines="1"
+            tools:text="asdf"
+            style="@style/AppTheme.ContactForm.EditText"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iv_name"
+        style="@style/AppTheme.ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ti_fname"
+        app:layout_constraintEnd_toStartOf="@+id/ti_fname"
+        app:layout_constraintTop_toTopOf="@+id/ti_fname"
+        app:srcCompat="@drawable/ic_perm_identity_black_24" />
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        style="@style/AppTheme.ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ti_phone"
+        app:layout_constraintEnd_toStartOf="@+id/ti_phone"
+        app:layout_constraintTop_toTopOf="@+id/ti_phone"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+    <ImageView
+        android:id="@+id/iv_email"
+        style="@style/AppTheme.ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ti_email"
+        app:layout_constraintEnd_toStartOf="@+id/ti_email"
+        app:layout_constraintTop_toTopOf="@+id/ti_email"
+        app:srcCompat="@drawable/ic_email_black_24dp" />
+
+    <ImageView
+        android:id="@+id/iv_address"
+        style="@style/AppTheme.ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ti_address"
+        app:layout_constraintEnd_toStartOf="@+id/ti_address"
+        app:layout_constraintTop_toTopOf="@+id/ti_address"
+        app:srcCompat="@drawable/ic_place_black_24dp" />
+
+    <ImageView
+        android:id="@+id/iv_website"
+        style="@style/AppTheme.ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ti_website"
+        app:layout_constraintEnd_toStartOf="@+id/ti_website"
+        app:layout_constraintTop_toTopOf="@+id/ti_website"
+        app:srcCompat="@drawable/ic_public_black_24dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/AppTheme.ContactForm.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/save_button_label"
+        android:onClick="onSubmitButtonClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_website"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
